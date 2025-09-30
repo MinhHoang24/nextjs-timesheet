@@ -8,3 +8,7 @@
 .login-page {
     background: #00bcd4;
 }
+
+li {
+    list-style: none;
+}

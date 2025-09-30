@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
-
+import HeaderComponent from "../header/Header";
+import SidebarComponent from "../sidebar/Sidebar";
 
 interface LoginLayoutProps {
   children: ReactNode;
@@ -8,8 +9,8 @@ interface LoginLayoutProps {
 const HomeLayout = ({ children }: LoginLayoutProps) => {
   return (
     <div>
-      <header>Header Content</header>
-      <aside>Sidebar Content</aside>
+      <HeaderComponent />
+      <SidebarComponent />
       <main>{children}</main>
     </div>
   );

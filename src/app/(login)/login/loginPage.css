@@ -1,11 +1,18 @@
 body {
-    background: #00bcd4;
-    max-width: 360px;
-    margin: 5% auto;
+    /* max-width: 360px;
+    margin: 5% auto; */
+}
+
+.login-container {
+    background-color: #00bcd4;
+    height: 100vh;
 }
 
 .login-box {
+    max-width: 360px;
+    margin: auto;
     box-sizing: border-box;
+    padding-top: 82px;
 }
 
 .logo {
