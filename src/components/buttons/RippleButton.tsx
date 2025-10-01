@@ -13,10 +13,11 @@ type RippleButtonProps = {
   textBtncolor: string;
   onClick?: () => void;
   disabled?: boolean;
-  width: string;
+  width?: string;
+  icon?: string;
 };
 
-const RippleButton: React.FC<RippleButtonProps> = ({ text, bgBtncolor, textBtncolor, onClick, disabled, width }) => {
+const RippleButton: React.FC<RippleButtonProps> = ({ text, bgBtncolor, textBtncolor, onClick, disabled, width, icon }) => {
   const [ripples, setRipples] = useState<Ripple[]>([]);
 
   const handleRippleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -48,6 +49,7 @@ const RippleButton: React.FC<RippleButtonProps> = ({ text, bgBtncolor, textBtnco
         onClick={handleRippleClick}
         style={{ backgroundColor: buttonColor, color: textBtnColor, width: width }}
     >
+      <i className='material-icons'>{icon}</i>
       {ripples.map((ripple, index) => (
         <div
           key={index}
@@ -58,7 +60,8 @@ const RippleButton: React.FC<RippleButtonProps> = ({ text, bgBtncolor, textBtnco
             width: ripple.size + 'px',
             height: ripple.size + 'px',
           }}
-        />
+        >
+        </div>
       ))}
       {text}
     </button>

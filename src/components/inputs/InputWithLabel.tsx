@@ -6,7 +6,7 @@ interface InputWithLabelProps {
   inputType: string;
   inputId: string;
   value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const InputWithLabel: React.FC<InputWithLabelProps> = ({ labelText, inputType, inputId, value, onChange }) => {

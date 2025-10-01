@@ -30,7 +30,7 @@ const HeaderComponent = () => {
             <i className='fas fa-file-alt'></i>
           </a>
           <li className='dropdown'>
-            <a href="javascript:void(0);" className='dropdown-toggle' data-toggle="dropdown" role='button'>
+            <a className='dropdown-toggle' data-toggle="dropdown" role='button'>
               <i className='famfamfam-flags gb' title='English'></i>
               English
               <b className='caret'></b>
@@ -38,7 +38,7 @@ const HeaderComponent = () => {
           </li>
         </div>
         <li className='pull-right'>
-          <a href="javascript:void(0);" className='js-right-sidebar' data-close="false">
+          <a className='js-right-sidebar' data-close="false">
             <i className='material-icons'>more_vert</i>
           </a>
         </li>
